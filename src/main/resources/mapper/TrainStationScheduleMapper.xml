@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wch.jsrailway.mapper.TrainStationScheduleMapper">
+
+    <resultMap id="BaseResultMap" type="com.wch.jsrailway.model.entity.TrainStationSchedule">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="train_id" column="train_id" jdbcType="INTEGER"/>
+            <result property="station_id" column="station_id" jdbcType="INTEGER"/>
+            <result property="station_order" column="station_order" jdbcType="INTEGER"/>
+            <result property="arrival_time" column="arrival_time" jdbcType="TIME"/>
+            <result property="departure_time" column="departure_time" jdbcType="TIME"/>
+            <result property="stay_duration_minutes" column="stay_duration_minutes" jdbcType="INTEGER"/>
+            <result property="run_duration_from_start_minutes" column="run_duration_from_start_minutes" jdbcType="INTEGER"/>
+            <result property="is_delete" column="is_delete" jdbcType="TINYINT"/>
+            <result property="created_time" column="created_time" jdbcType="TIMESTAMP"/>
+            <result property="updated_time" column="updated_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,train_id,station_id,
+        station_order,arrival_time,departure_time,
+        stay_duration_minutes,run_duration_from_start_minutes,is_delete,
+        created_time,updated_time
+    </sql>
+</mapper>

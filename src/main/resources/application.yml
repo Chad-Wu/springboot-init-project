@@ -3,7 +3,7 @@
 # @from  chonghe  
 spring:
   application:
-    name: init-proj
+    name: js-railway
   # 默认 dev 环境
   profiles:
     active: dev
@@ -21,7 +21,7 @@ spring:
   # todo 需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.32.128:3306
+    url: jdbc:mysql://192.168.32.128:3306/js_railway
     username: root
     password: 123456
   # Redis 配置
@@ -79,4 +79,4 @@ knife4j:
       default:
         api-rule: package
         api-rule-resources:
-          - com.wch.projname.controller
+          - com.wch.jsrailway.controller

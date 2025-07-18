@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wch.jsrailway.mapper.CityMapper">
+
+    <resultMap id="BaseResultMap" type="com.wch.jsrailway.model.entity.City">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="pinyin" column="pinyin" jdbcType="VARCHAR"/>
+            <result property="pinyin_initial" column="pinyin_initial" jdbcType="VARCHAR"/>
+            <result property="is_hot" column="is_hot" jdbcType="TINYINT"/>
+            <result property="is_delete" column="is_delete" jdbcType="TINYINT"/>
+            <result property="created_time" column="created_time" jdbcType="TIMESTAMP"/>
+            <result property="updated_time" column="updated_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,pinyin,
+        pinyin_initial,is_hot,is_delete,
+        created_time,updated_time
+    </sql>
+</mapper>

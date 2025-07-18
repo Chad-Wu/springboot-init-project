@@ -11,9 +11,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.wch</groupId>
-    <artifactId>init-proj</artifactId>
+    <artifactId>js-railway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>init-proj</name>
+    <name>js-railway</name>
     <properties>
         <java.version>1.8</java.version>
     </properties>

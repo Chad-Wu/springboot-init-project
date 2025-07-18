@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wch.jsrailway.mapper.StationMapper">
+
+    <resultMap id="BaseResultMap" type="com.wch.jsrailway.model.entity.Station">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="pinyin" column="pinyin" jdbcType="VARCHAR"/>
+            <result property="pinyin_initial" column="pinyin_initial" jdbcType="VARCHAR"/>
+            <result property="city_id" column="city_id" jdbcType="INTEGER"/>
+            <result property="longitude" column="longitude" jdbcType="DECIMAL"/>
+            <result property="latitude" column="latitude" jdbcType="DECIMAL"/>
+            <result property="is_active" column="is_active" jdbcType="TINYINT"/>
+            <result property="is_delete" column="is_delete" jdbcType="TINYINT"/>
+            <result property="created_time" column="created_time" jdbcType="TIMESTAMP"/>
+            <result property="updated_time" column="updated_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,code,
+        address,pinyin,pinyin_initial,
+        city_id,longitude,latitude,
+        is_active,is_delete,created_time,
+        updated_time
+    </sql>
+</mapper>
